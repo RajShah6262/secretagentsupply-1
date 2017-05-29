@@ -200,8 +200,8 @@ footer {
 
 }
 
-/********** Less than 470 px **********/
-@media only screen and (max-width: 470px) {
+/********** Less than 480 px **********/
+@media only screen and (max-width: 480px) {
   .item,
   .location,
   .hours {
