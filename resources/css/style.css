@@ -44,6 +44,19 @@ footer {
   display: flex;
 }
 
+.logo-banner,
+.item,
+.item-height,
+footer {
+  align-items: center;
+}
+
+ul,
+.store,
+.information {
+  justify-content: space-between;
+}
+
 header .full-width,
 .item h2,
 .information h2,
@@ -60,7 +73,6 @@ nav.full-width,
 .logo-banner {
   height: 1.5rem;
   padding: .66rem 0;
-  align-items: center;
 }
 
 .logo-banner img {
@@ -95,7 +107,6 @@ nav.full-width {
 
 ul {
   padding: .75rem 0;
-  justify-content: space-between;
 }
 
 li {
@@ -112,21 +123,16 @@ li a {
 }
 
 /********** Store **********/
-.store {
-  justify-content: space-between;
-}
 .item {
   border: solid 4px black;
   width: 30%;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
 }
 
 .item-height {
   min-height: 9rem;
   padding: 2rem 0;
-  align-items: center;
 }
 
 .item img {
@@ -141,7 +147,6 @@ li a {
 
 /********** Info **********/
 .information {
-  justify-content: space-between;
   margin-bottom: 4rem;
 }
 
@@ -162,7 +167,6 @@ li a {
 /********** Footer **********/
 footer {
   height: 5rem;
-  align-items: center;
 }
 
 /********** Less than 1024 px **********/
@@ -177,7 +181,8 @@ footer {
   ul {
     justify-content: center;
   }
-  .site-width li {
+  .site-width li,
+  .store .item:nth-child(3) {
     display: none;
   }
   li.small-screen {
@@ -192,9 +197,6 @@ footer {
   .item {
     width: 47%;
   }
-  .store .item:nth-child(3) {
-    display: none;
-  }
 
 }
 
@@ -204,6 +206,11 @@ footer {
   .location,
   .hours {
     width: 90%;
+  }
+
+  .store,
+  .information {
+    justify-content: center;
   }
   /********** Header **********/
 
@@ -224,16 +231,12 @@ footer {
 
   /********** Store **********/
 
-  .store {
-    justify-content: center;
-  }
   .store .item:nth-child(2) {
     display: none;
   }
 
   /********** info **********/
   .information {
-    justify-content: center;
     flex-wrap: wrap;
   }
   .location {
