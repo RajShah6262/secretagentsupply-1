@@ -165,7 +165,83 @@ footer {
   align-items: center;
 }
 
-/********** Less than 960 px **********/
-@media only screen and (max-width: 960) {
+/********** Less than 1024 px **********/
+@media only screen and (max-width: 1024px) {
 
+  .site-width {
+    width: 100%;
+  }
+
+  /********** Nav **********/
+
+  ul {
+    justify-content: center;
+  }
+  .site-width li {
+    display: none;
+  }
+  li.small-screen {
+    display: inline;
+  }
+
+  /********** Store **********/
+
+  .store {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 47%;
+  }
+  .store .item:nth-child(3) {
+    display: none;
+  }
+
+}
+
+/********** Less than 470 px **********/
+@media only screen and (max-width: 470px) {
+  .item,
+  .location,
+  .hours {
+    width: 90%;
+  }
+  /********** Header **********/
+
+  .feature-container {
+    height: 15rem;
+  }
+  .feature-item {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .feature-item h2 {
+    font-size: .77rem;
+  }
+  .feature-item h1 {
+    font-size: 1rem;
+  }
+
+  /********** Store **********/
+
+  .store {
+    justify-content: center;
+  }
+  .store .item:nth-child(2) {
+    display: none;
+  }
+
+  /********** info **********/
+  .information {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .location {
+    margin-bottom: .5rem;
+  }
+
+  /********** Footer **********/
+  footer h2 {
+    text-align: center;
+  }
 }
