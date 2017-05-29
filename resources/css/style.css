@@ -35,15 +35,28 @@ h2 {
 
 .logo-banner,
 .feature-container,
-ul {
+ul,
+.item,
+.item-height,
+.store,
+.information,
+footer {
   display: flex;
 }
 
-/********** Header **********/
-header .full-width {
+header .full-width,
+.item h2,
+.information h2,
+footer {
   background-color: black;
 }
 
+nav.full-width,
+.store {
+  margin-bottom: 3rem;
+}
+
+/********** Header **********/
 .logo-banner {
   height: 1.5rem;
   padding: .66rem 0;
@@ -77,6 +90,7 @@ header .full-width {
 
 nav.full-width {
   background-color: firebrick;
+  margin-bottom: 3rem;
 }
 
 ul {
@@ -91,4 +105,67 @@ li {
 
 li a {
   text-decoration: none;
+}
+
+.small-screen {
+  display: none;
+}
+
+/********** Store **********/
+.store {
+  justify-content: space-between;
+}
+.item {
+  border: solid 4px black;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item-height {
+  min-height: 9rem;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.item img {
+  max-width: 9rem;
+}
+
+.item h2 {
+  padding: .5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+/********** Info **********/
+.information {
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.location,
+.hours {
+  width: 35%;
+}
+
+.information h2 {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.information p {
+  color: black;
+  padding-top: .25rem;
+}
+
+/********** Footer **********/
+footer {
+  height: 5rem;
+  align-items: center;
+}
+
+/********** Less than 960 px **********/
+@media only screen and (max-width: 960) {
+
 }
