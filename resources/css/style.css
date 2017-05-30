@@ -131,7 +131,7 @@ li a {
 }
 
 .item-height {
-  min-height: 9rem;
+  height: 9rem;
   padding: 2rem 0;
 }
 
